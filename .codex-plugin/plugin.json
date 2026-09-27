@@ -1,0 +1,24 @@
+{
+  "name": "sql-data-agent",
+  "version": "0.1.0",
+  "description": "A read-only SQL data agent template with governed metadata, validation, synthetic examples, and evaluation cases.",
+  "author": {
+    "name": "Community template maintainers"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "SQL Data Agent",
+    "shortDescription": "Build safe, source-grounded SQL analysis workflows.",
+    "longDescription": "A reusable template for schema-grounded SQL generation, read-only execution, data-quality validation, and evidence-backed analysis.",
+    "developerName": "Community template maintainers",
+    "category": "Productivity",
+    "capabilities": [
+      "Read"
+    ],
+    "defaultPrompt": [
+      "Compare a metric across two equal periods.",
+      "Review this SQL for safety and correctness.",
+      "Diagnose a metric change using verified data."
+    ]
+  }
+}

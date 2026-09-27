@@ -1,0 +1,5 @@
+# Copy this file to audit-denylist.local.txt and add organization-specific terms.
+# Keep the local file out of Git. Use one case-insensitive literal term per line.
+private-company-name.example
+private-schema-prefix.example
+private-domain.example

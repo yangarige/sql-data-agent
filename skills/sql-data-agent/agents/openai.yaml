@@ -1,0 +1,4 @@
+interface:
+  display_name: "SQL Data Agent"
+  short_description: "Generate safe SQL, query data, and validate analytical conclusions."
+  default_prompt: "Use $sql-data-agent to answer this data question with safe SQL and validated evidence."

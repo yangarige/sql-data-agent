@@ -1,0 +1,35 @@
+name: Validate public template
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run validator tests
+        run: python3 -m unittest discover -s tests -v
+      - name: Validate example queries
+        run: |
+          for query in examples/example_query.sql examples/queries/*.sql; do
+            python3 skills/sql-data-agent/scripts/validate_sql.py "$query"
+          done
+      - name: Build and query fictional demo
+        run: |
+          demo_db="${RUNNER_TEMP}/sql-data-agent-demo.sqlite"
+          python3 examples/demo/build_demo_db.py "$demo_db"
+          for query in examples/demo/queries/*.sql; do
+            python3 examples/demo/query_demo.py "$demo_db" "$query"
+          done
+      - name: Validate behavioral evaluation cases
+        run: python3 scripts/check_eval_cases.py
+      - name: Audit public repository
+        run: python3 scripts/audit_public_repo.py .
