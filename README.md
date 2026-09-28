@@ -1,5 +1,7 @@
 # SQL Data Agent Template
 
+English | [简体中文](README.zh-CN.md)
+
 A public-safe, skill-only plugin template for answering data questions, writing read-only SQL, validating query results, and producing evidence-backed conclusions.
 
 Use it as a starting point for an internal analytics assistant: add your approved schema metadata and metric definitions, connect a read-only data tool, and keep credentials and production data outside the repository.
@@ -31,7 +33,7 @@ After publishing, the Skill subdirectory can be installed from its GitHub direct
 $skill-installer install https://github.com/yangarige/sql-data-agent/tree/main/skills/sql-data-agent
 ```
 
-Replace `OWNER/REPOSITORY` with the public repository path. Restart the client after installation when required by the client.
+Restart the client after installation when required by the client.
 
 ## Structure
 
@@ -123,4 +125,6 @@ python3 scripts/check_eval_cases.py
 python3 scripts/audit_public_repo.py .
 ```
 
-No license is included by default. Choose one deliberately before public distribution; see `docs/LICENSING.md`.
+## License
+
+Released under the [MIT License](LICENSE). See [licensing notes](docs/LICENSING.md) for the permissions and conditions that apply.

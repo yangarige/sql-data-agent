@@ -9,3 +9,4 @@
 - Added connector, evaluation, customization, security, and use-case documentation.
 - Added behavioral evaluation cases and public-release auditing.
 - Added continuous integration and contribution templates.
+- Adopted the MIT License and added a Simplified Chinese project guide.

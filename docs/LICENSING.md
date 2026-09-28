@@ -1,14 +1,9 @@
-# Licensing decision
+# License
 
-This template intentionally does not choose a license for the repository owner.
+This project is released under the MIT License. The authoritative license text is in the repository-root `LICENSE` file.
 
-Before publishing, select a license that matches the intended reuse policy. Common options include:
+The MIT License permits commercial use, distribution, modification, and private use. Copies or substantial portions of the software must retain the copyright and license notices. The software is provided without warranty or liability.
 
-- MIT: short and permissive.
-- Apache-2.0: permissive with an explicit patent grant.
-- GPL-3.0: requires distributed derivative works to remain under the same license.
-- No license: the public can view the repository but generally receives no permission to reuse, modify, or redistribute it.
+Repository manifests use the SPDX identifier `MIT` so package and plugin tooling can identify the license consistently.
 
-After choosing, add the standard license text as `LICENSE` at the repository root and set the same SPDX identifier in `plugin.json` and `.codex-plugin/plugin.json`.
-
-Licensing is a legal decision; obtain appropriate advice when organizational policy, third-party code, trademarks, or patents are involved.
+This license covers this repository's original template content. It does not grant rights to third-party code, data, trademarks, schemas, or other material that users may add while customizing the template. Organizations remain responsible for confirming that their additions may be distributed.

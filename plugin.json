@@ -2,6 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "sql-data-agent",
   "version": "0.1.0",
+  "license": "MIT",
   "description": "A read-only SQL data agent template with governed metadata, validation, synthetic examples, and evaluation cases.",
   "author": {
     "name": "Community template maintainers"
